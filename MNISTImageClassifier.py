@@ -38,7 +38,7 @@ net = ImageClassifier().to(DEVICE)
 optimizer = torch.optim.Adam(net.parameters(), lr=1e-3)
 loss_function = nn.CrossEntropyLoss()
 
-if __name__ == "__main__":
+def main():
   # Training
   for epoch in range(NUM_EPOCHS):
     for batch in dataset:
@@ -66,3 +66,6 @@ if __name__ == "__main__":
     img = Image.open('img_1.jpg')
     img_tensor = transforms.ToTensor()(img).unsqueeze(0).to(DEVICE)
     print(torch.argmax(net(img_tensor)))
+
+if __name__ == "__main__":
+  main()
