@@ -1,6 +1,7 @@
 # MNISTImageClassifier
 
-Basic Image Classifier built in PyTorch using MNIST Dataset
+Basic Image Classifier built in PyTorch using MNIST Dataset.
+Can recognize handwritten digits from 0 to 9.
 
 ## Network architecture:
 
